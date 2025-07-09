@@ -50,6 +50,20 @@ a:hover {
     color: var(--accent-color);
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 .btn {
     display: inline-block;
     background: var(--primary-color);
