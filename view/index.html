@@ -34,8 +34,9 @@
                     <h2>Olá, eu sou <span class="nome-destaque">Ariel Lorenz</span></h2>
                     <p>Desenvolvedor Web Front-end</p>
                     <div class="social-links">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ARIELLO24" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ariel-lorenz-a3687a30b/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
@@ -64,11 +65,6 @@
                         <h3>JavaScript</h3>
                         <p>ES6+, DOM, Fetch API e manipulação de eventos</p>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <h3>React</h3>
-                        <p>Componentes, Hooks e Context API</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -77,46 +73,65 @@
             <div class="container">
                 <h2>Meus Projetos</h2>
                 <div class="projects-grid" id="projects-container">
-                    <!-- Projetos serão carregados via JavaScript -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/snake.png" alt="Projeto 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Snake Game</h3>
+                            <p>Descrição breve do primeiro projeto.</p>
+                            <div class="project-links">
+                                <a href="/view/snake.html">Ver Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/forum.png" alt="Projeto 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Projeto 2</h3>
+                            <p>Descrição breve do segundo projeto.</p>
+                            <div class="project-links">
+                                <a href="/view/forum.html">Ver Projeto</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="contact">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                        <span class="error-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="error-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                        <span class="error-message"></span>
-                    </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
-                <div id="form-success" class="hidden">
-                    <p>Mensagem enviada com sucesso! Entrarei em contato em breve.</p>
+        <section id="contato">
+            <h2>Contate Ariel Lorenz</h2>
+            <form id="form-contato">
+                <div class="form-group">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <p id="status-mensagem"></p>
+            </form>
         </section>
+
     </main>
 
     <footer class="footer">
         <div class="footer-container">
             <p>&copy; <span id="current-year"></span> Meu Portfólio. Todos os direitos reservados.</p>
             <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/ARIELLO24" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ariel-lorenz-a3687a30b/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ariello.c/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>

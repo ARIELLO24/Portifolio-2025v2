@@ -1,0 +1,134 @@
+* {
+  font-family: monospace
+}
+
+header {
+  letter-spacing: 2px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: monospace;
+}
+
+:root {
+  --primary-color: #3b82f6;
+  --text-color: #1f2937;
+  --bg-color: #ffffff;
+  --hover-color: #2563eb;
+  --transition-speed: 0.25s;
+  --header-height: 80px;
+}
+
+.Site-header {
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.Header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo img {
+  height: 100%;
+  max-height: 70px;
+  width: 70px;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.Logo img:hover {
+  transform: translateY(-2px);
+}
+
+.Main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.Nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all var(--transition-speed) ease;
+}
+
+.Nav-link:hover {
+  color: var(--primary-color);
+}
+
+.Nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed) ease;
+}
+
+.Nav-link:hover::after {
+  width: 100%;
+}
+
+
+.Nav-link.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.Nav-link.active::after {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.post {
+  background-color: #000000;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post p {
+  margin-bottom: 0;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
